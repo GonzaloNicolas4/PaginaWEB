@@ -1,0 +1,15 @@
+/* header */
+$cool-coral: #f38f3d;
+$padding-size: 40px;
+
+@mixin header {
+} 
+header{
+	background-color: $cool-coral;
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+}
+header{
+	@include header;
+	}

@@ -1,0 +1,294 @@
+/*                           ESTILOS GENERALES                        */
+html {
+  height: 100%;
+  font-size: 70.5%;
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-image: linear-gradient(white, black);
+  color: rgb(15, 6, 2);
+  text-align: center;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  header{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  }
+}
+
+ul{
+  list-style: none;
+}
+li{
+  color: coral;
+}
+ul li a:hover {
+	background-color: red;
+	color: white;
+	padding: 2px;
+}
+img {
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+}
+body {
+  min-height: 100%;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: wheat;
+  display: flex;
+	height: 600px;
+	flex-direction: column;
+	padding: 1em;
+
+}
+#TituloGeneral{
+  background-color: black;
+  color: red;
+  text-align: center;
+}
+.ParrafoHome{
+  color: rgb(0, 0, 0);
+  
+}
+.FondoHome{
+  background-color: rgb(247, 165, 83);
+}
+h1{
+  color: #fd0217;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color:black;
+}
+h2 {
+  font-style: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  text-align: center;
+}
+h3{
+  color: black;
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: rgb(241, 139, 79);
+  font-weight: normal;
+  padding: 4px;
+	text-transform: unset;
+} 
+
+/*                           ESTILOS PRODUCTOS                        */
+
+table {
+  border: 3px solid;
+  font-size: 12px;
+}
+th {
+  background-color:#cc6f13;
+  border: 1px solid;
+}
+
+tr, td {
+  border: 1px solid;
+}
+
+Li a{
+  text-decoration: none;
+}
+.Tablon{
+  color: cornflowerblue;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: hsla(24, 75%, 62%, 0.979);
+  color: white;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+padding: 15px;
+}
+
+
+/*                              ESTILOS LISTAS                       */
+
+.ListasUnicas{
+  color: coral;
+}
+ol li{
+  color: black;
+}
+.MenuDos{
+  list-style: none;
+}
+
+/*                                          BOXES y MENU                                      */
+
+
+
+.Navegacion{
+  width: 100%;
+  background-color: black;
+}
+.Navegacion a{
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(247, 165, 83);
+}
+.Menu li{
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+}
+.submenu {
+  position: absolute;
+  display: none;
+}
+
+.submenu li{
+  display: block;
+  background-color:black ;
+  width: 150px;
+  text-align: center;
+}
+
+.Menu li:hover .submenu{
+  display: block;
+}
+.BotonComprar{
+  background-color: black;
+  padding: 20px;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+
+div
+
+.Menu{
+  font-size: 1.5rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .Menu {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+li a{
+  color: #000;
+}
+footer {
+  background-color: #D90429;
+  animation-name: footer;
+  animation-duration: 4s;
+  color: #EDF2F4;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  flex:1;
+	padding: 1rem;
+	margin:1px;
+}
+i {
+  font-size: 2rem;
+  color: coral;
+  background-color: black;
+  padding: 30px;
+  border-radius: 50%;
+  }
+
+/*                                          GRIDS                                */
+
+/*                                Animaciones                            */
+
+.Transicion:hover {
+  transition: width 2s, height 2s, transform 2s;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+  font-size: 4rem;
+}
+.IMGTR:hover {
+  transform: rotateY(150deg)
+}
+@keyframes footer {
+  from {background-color: white;}
+  to {background-color: coral;}
+}
+
+/*                                Cards                           */
+
+.card {
+  max-width: 300px;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.conteiner {
+  padding: 2px 16px;
+}
+
+
+.info__maquineria{
+  font-family: fantasy;
+}
+
+.contacto--destacado{
+  background-color: #000;
+}
+.contacto__destacado--uppercase{
+  text-transform: uppercase;
+}
