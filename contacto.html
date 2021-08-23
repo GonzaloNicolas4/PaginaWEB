@@ -65,35 +65,34 @@
                 </article> 
 
                 <div class="container">
-                    <form action="/action_page.php">
-                    <div class="row">
-                    <div class="col-25">
-                        <label for="Nombre">Nombre Completo </label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="nombre" name="nombrecompleto" placeholder="...">
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-25">
-                        <label for="mail">Email</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="mail" name="Email" placeholder="...">
-                    </div>
-                    </div>
-                    <div class="row">
-                    <div class="col-25">
-                        <label for="Telefono">Telefono</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="tel" id="telefono" name="Telefono" placeholder="...">
-                    </div>
-                    </div>
-                    <div class="row">
-                    <input type="submit" value="Enviar Consulta">
-                    <input type="reset" value="Borrar Datos">
-                    </div>
+                    <form>
+                        <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault01">Nombre</label>
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="nombre" value="" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault02">Apellido</label>
+                            <input type="text" class="form-control" id="validationDefault02" placeholder="apellido" value="" required>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationDefault05">Telefono</label>
+                            <input type="text" class="form-control" id="validationDefault05" placeholder="numero" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationDefault02">Consulta</label>
+                            <input type="text" class="form-control" id="validationDefault02" placeholder="consulta" value="" required>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                            Estoy de acuerdo con las condiciones
+                            </label>
+                        </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Enviar</button>
                     </form>
                 </div>
     </section>
