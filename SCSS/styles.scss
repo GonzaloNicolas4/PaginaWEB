@@ -245,13 +245,7 @@ html {
   
   /*                                Animaciones                            */
   
-  .Transicion:hover {
-    transition: width 2s, height 2s, transform 2s;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
-    font-size: 4rem;
-  }
+
   .IMGTR:hover {
     transform: rotateY(150deg)
   }
@@ -306,9 +300,6 @@ html {
     text-transform: uppercase;
   }
   
-  .block{ color: inherit; }
-  .block__element{ color: inherit; }
-  .block__element--modifier{ color: inherit; }
 
 /*                     Formularios                             */
 
